@@ -6,7 +6,7 @@ const ExtractedContent = () => {
   const {images, setImages, tables, setTables, data} = useStateContext()
   const fetchImages = async () => {
     try {
-      const response = await fetch("https://cr-backend-hun7.onrender.com/images/"); // Replace with your API endpoint
+      const response = await fetch("https://cr-backend-qqf4.onrender.com/images/"); // Replace with your API endpoint
       const res_data = await response.json();
       const fetchedImages = res_data.images.map((base64, index) => ({
         url: `data:image/jpeg;base64,${base64}`,
@@ -20,7 +20,7 @@ const ExtractedContent = () => {
 
   const fetchTables = async () => {
     try {
-      const response = await fetch("https://cr-backend-hun7.onrender.com/tables/"); // Replace with your API endpoint
+      const response = await fetch("https://cr-backend-qqf4.onrender.com/tables/"); // Replace with your API endpoint
       const res_data = await response.json();
       const fetchedTables = res_data.tables.map((table) => ({
         url: `data:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;base64,${table.content}`,

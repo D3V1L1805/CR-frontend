@@ -48,7 +48,7 @@ const UploadZone = () => {
     setIsProcessing(true);
 
     try {
-      const response = await axios.post("https://cr-backend-hun7.onrender.com/upload-pdf/", formData, {
+      const response = await axios.post("https://cr-backend-qqf4.onrender.com/upload-pdf/", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
