@@ -51,7 +51,9 @@ Follow these instructions to set up and run the app locally.
    
    ```bash
    npm install
+   ```
    or
+   ```bash
    npm i
 
 4. **Installing Serve** :
